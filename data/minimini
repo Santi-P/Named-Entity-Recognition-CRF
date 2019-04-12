@@ -1,0 +1,353 @@
+#	http://de.wikipedia.org/wiki/Schönburg_(Rhein)	[2009-10-23]	
+1	1951	O	O
+2	bis	O	O
+3	1953	O	O
+4	wurde	O	O
+5	der	O	O
+6	nördliche	O	O
+7	Teil	O	O
+8	als	O	O
+9	Jugendburg	O	O
+10	des	O	O
+11	Kolpingwerkes	B-OTH	O
+12	gebaut	O	O
+13	.	O	O
+
+#	http://de.wikipedia.org/wiki/Die_Geschichte_vom_kleinen_Muck	[2009-10-18]	
+1	Da	O	O
+2	Muck	B-PER	O
+3	das	O	O
+4	Kriegsschreiben	O	O
+5	nicht	O	O
+6	überbracht	O	O
+7	hat	O	O
+8	,	O	O
+9	wird	O	O
+10	er	O	O
+11	als	O	O
+12	Retter	O	O
+13	des	O	O
+14	Landes	O	O
+15	ausgezeichnet	O	O
+16	und	O	O
+17	soll	O	O
+18	zum	O	O
+19	Schatzmeister	O	O
+20	ernannt	O	O
+21	werden	O	O
+22	.	O	O
+
+#	http://de.wikipedia.org/wiki/Robert_Schörgenhofer	[2009-12-23]	
+1	Mit	O	O
+2	1.	O	O
+3	Jänner	O	O
+4	2007	O	O
+5	wurde	O	O
+6	Robert	B-PER	O
+7	Schörgenhofer	I-PER	O
+8	,	O	O
+9	als	O	O
+10	Nachfolger	O	O
+11	des	O	O
+12	ausgeschiedenen	O	O
+13	Dietmar	B-PER	O
+14	Drabek	I-PER	O
+15	,	O	O
+16	in	O	O
+17	die	O	O
+18	Kaderliste	O	O
+19	der	O	O
+20	FIFA-Schiedsrichter	B-ORGpart	O
+21	aufgenommen	O	O
+22	.	O	O
+
+#	http://de.wikipedia.org/wiki/Adolf_Schlatter	[2009-12-05]	
+1	Die	O	O
+2	These	O	O
+3	,	O	O
+4	Schlatter	B-PER	O
+5	sei	O	O
+6	Antisemit	O	O
+7	gewesen	O	O
+8	,	O	O
+9	wurde	O	O
+10	seither	O	O
+11	in	O	O
+12	der	O	O
+13	theologischen	O	O
+14	Fachliteratur	O	O
+15	nicht	O	O
+16	mehr	O	O
+17	vertreten	O	O
+18	.	O	O
+
+#	http://www.derwesten.de/nachrichten/staedte/duisburg/2008/11/18/news-91885765/detail.html	[2008-11-18]	
+1	"	O	O
+2	Lehmbruck	B-OTH	B-PER
+3	-	I-OTH	O
+4	Beuys	I-OTH	B-PER
+5	.Zeichnungen	I-OTH	O
+6	"	O	O
+7	lautet	O	O
+8	der	O	O
+9	Titel	O	O
+10	der	O	O
+11	gerade	O	O
+12	eröffneten	O	O
+13	Ausstellung	O	O
+14	,	O	O
+15	die	O	O
+16	Kuratorin	O	O
+17	Dr	O	O
+18	.	O	O
+19	Marion	B-PER	O
+20	Bornscheuer	I-PER	O
+21	bis	O	O
+22	zum	O	O
+23	11.	O	O
+24	Januar	O	O
+25	im	O	O
+26	Lehmbruck-Museum	B-ORG	O
+27	präsentiert	O	O
+28	.	O	O
+
+#	http://feeds.gulli.com/~r/gulli/~3/0XnFf2wkBpc/	[2009-04-03]	
+1	Der	O	O
+2	Videohoster	O	O
+3	und	O	O
+4	die	O	O
+5	Vertreter	O	O
+6	der	O	O
+7	Autoren	O	O
+8	schieben	O	O
+9	sich	O	O
+10	gegenseitig	O	O
+11	den	O	O
+12	schwarzen	O	O
+13	Peter	B-PER	O
+14	zu	O	O
+15	.	O	O
+
+#	http://de.wikipedia.org/wiki/Schloss_Hartenfels	[2010-01-02]	
+1	Die	O	O
+2	Kanzel	O	O
+3	befindet	O	O
+4	sich	O	O
+5	an	O	O
+6	der	O	O
+7	Südseite	O	O
+8	des	O	O
+9	Saals	O	O
+10	.	O	O
+
+#	http://www.sueddeutsche.de/panorama/artikel/386/106280/	[2007-03-20]	
+1	Zuletzt	O	O
+2	war	O	O
+3	es	O	O
+4	Wolfram	B-PER	O
+5	Graf-Rudolf	I-PER	O
+6	,	O	O
+7	Chef	O	O
+8	des	O	O
+9	Zoos	O	O
+10	in	O	O
+11	Aachen	B-LOC	O
+12	.	O	O
+
+#	http://www.oe24.at/welt/weltchronik/Schweinegrippe-ist-ernst/517394.html	[2011-01-19]	
+1	Nach	O	O
+2	den	O	O
+3	Symptomen	O	O
+4	lassen	O	O
+5	sich	O	O
+6	die	O	O
+7	beiden	O	O
+8	Krankheiten	O	O
+9	-	O	O
+10	"	O	O
+11	normale	O	O
+12	"	O	O
+13	Influenza	O	O
+14	und	O	O
+15	Schweinegrippe	O	O
+16	-	O	O
+17	nicht	O	O
+18	unterscheiden	O	O
+19	.	O	O
+
+#	http://de.wikipedia.org/wiki/Francesco_Antommarchi	[2009-10-17]	
+1	Politisch	O	O
+2	interessiert	O	O
+3	ging	O	O
+4	Antommarchi	B-PER	O
+5	nach	O	O
+6	Polen	B-LOC	O
+7	und	O	O
+8	übernahm	O	O
+9	dort	O	O
+10	1830	O	O
+11	während	O	O
+12	des	O	O
+13	Novemberaufstandes	O	O
+14	in	O	O
+15	Warschau	B-LOC	O
+16	die	O	O
+17	Leitung	O	O
+18	der	O	O
+19	ärztlichen	O	O
+20	Anstalten	O	O
+21	;	O	O
+22	kehrte	O	O
+23	jedoch	O	O
+24	bald	O	O
+25	nach	O	O
+26	Paris	B-LOC	O
+27	zurück	O	O
+28	.	O	O
+
+#	http://de.wikipedia.org/wiki/Manuel_Bulnes_Prieto	[2009-09-02]	
+1	Am	O	O
+2	20.	O	O
+3	Januar	O	O
+4	1839	O	O
+5	gelang	O	O
+6	Manuel	B-PER	O
+7	Bulnes	I-PER	O
+8	bei	O	O
+9	der	O	O
+10	Belagerung	O	O
+11	von	O	O
+12	Yungay	B-LOC	O
+13	der	O	O
+14	entscheidende	O	O
+15	Sieg	O	O
+16	.	O	O
+
+#	http://www.rhein-main.net/sixcms/list.php?page=fnp2_news_article&id=4434835	[2008-04-03]	
+1	Das	O	O
+2	Auto	O	O
+3	geriet	O	O
+4	ins	O	O
+5	Schleudern	O	O
+6	,	O	O
+7	kam	O	O
+8	nach	O	O
+9	rechts	O	O
+10	von	O	O
+11	der	O	O
+12	Fahrbahn	O	O
+13	ab	O	O
+14	und	O	O
+15	prallte	O	O
+16	gegen	O	O
+17	einen	O	O
+18	Baum	O	O
+19	.	O	O
+
+#	http://www.n-tv.de/sport/fussball/Bar-a-zu-Gast-bei-Erzfeinden-article816992.html	[2010-04-10]	
+1	Die	O	O
+2	Dramaturgie	O	O
+3	der	O	O
+4	Partie	O	O
+5	hielt	O	O
+6	,	O	O
+7	was	O	O
+8	sich	O	O
+9	Fußballfans	O	O
+10	weltweit	O	O
+11	erträumt	O	O
+12	hatten	O	O
+13	.	O	O
+
+#	http://www.donaukurier.de/nachrichten/sport/eishockey/news/Eisbaeren-trennt-nur-noch-ein-Sieg-vom-DEL-Titel;art400,2080055	[2009-04-13]	
+1	DEG-Torhüter	B-ORGpart	O
+2	Jamie	B-PER	O
+3	Storr	I-PER	O
+4	(	O	O
+5	Mitte	O	O
+6	)	O	O
+7	kann	O	O
+8	den	O	O
+9	Schuss	O	O
+10	zum	O	O
+11	1:0	O	O
+12	nicht	O	O
+13	parieren	O	O
+14	.	O	O
+
+#	http://www.cash.ch/forum/viewtopic5868.html	[2010-12-27]	
+1	Im	O	O
+2	Bereich	O	O
+3	der	O	O
+4	strukturierten	O	O
+5	Produkte	O	O
+6	beobachten	O	O
+7	wir	O	O
+8	derzeit	O	O
+9	sogar	O	O
+10	Rekordvolumen	O	O
+11	.	O	O
+
+#	rtl.de vom 26.06.2005	[2005-06-26]	
+1	Die	O	O
+2	monatelange	O	O
+3	Führungskrise	O	O
+4	beim	O	O
+5	europäischen	B-LOCderiv	O
+6	Luft-und	O	O
+7	Raumfahrtkonzern	O	O
+8	EADS	B-ORG	O
+9	ist	O	O
+10	beigelegt	O	O
+11	.	O	O
+
+#	http://www.sat1.de/ratgeber_magazine/kallwass/blog/blog8534.html	[2011-01-25]	
+1	Denn	O	O
+2	das	O	O
+3	ist	O	O
+4	nicht	O	O
+5	in	O	O
+6	Ordnung	O	O
+7	was	O	O
+8	du	O	O
+9	heute	O	O
+10	hier	O	O
+11	gemacht	O	O
+12	hast	O	O
+13	!	O	O
+
+#	http://de.wikipedia.org/wiki/Plauer_Torturm	[2010-01-12]	
+1	Heute	O	O
+2	ist	O	O
+3	durch	O	O
+4	einen	O	O
+5	roten	O	O
+6	Ziegelstreifen	O	O
+7	der	O	O
+8	Verlauf	O	O
+9	des	O	O
+10	an	O	O
+11	den	O	O
+12	Turm	O	O
+13	anschließenden	O	O
+14	nordwestlichen	O	O
+15	Mauerrings	O	O
+16	gekennzeichnet	O	O
+17	,	O	O
+18	während	O	O
+19	der	O	O
+20	südwestliche	O	O
+21	Mauerring	O	O
+22	bis	O	O
+23	zum	O	O
+24	Gelände	O	O
+25	des	O	O
+26	ehemaligen	O	O
+27	Franziskanerklosters	O	O
+28	St	B-LOC	O
+29	.	I-LOC	O
+30	Johannis	I-LOC	B-PER
+31	noch	O	O
+32	intakt	O	O
+33	ist	O	O
+34	.	O	O
