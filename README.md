@@ -1,10 +1,10 @@
-#Named Entity Recognition based on Conditional Random Fields
+# Named Entity Recognition based on Conditional Random Fields
 
 Python module for Linear Conditional Random Fields applied to Named Entity Recognition
 Santichai Pornavalai
 31.3.19
 
-##DEMO MANUAL:
+## DEMO MANUAL:
 
 
 python crf_demo.py 
@@ -20,7 +20,7 @@ python crf_demo.py
 
 -s      save to binary. Creates two binary files in working directory.  
 
-example usage:
+### example usage:
 
 1.
 python main.py -i data/train -t data/test -o results.txt -k 10 --eval --save
@@ -35,7 +35,7 @@ loads from weights, tests on test data, write results to results.txt, print clas
 
 
 
-##Intro
+## Intro
 
 This module reads a tab separated training file in BIO notation. The model was developed, tested and trained on data from GermEval 2014 shared task downloaded
 directly from their homepage. Two main classes are provided, Vectorizer and CRF. The CRF class makes use of but does not inherit from Vectorizer. 
@@ -50,7 +50,7 @@ in this class. I have only provided a few features, since feature engineering is
 added to the features by calling add_feature() on a function object. This function object needs to take a few arguments such as token sequence and position etc. and return the position 
 in which it is be added in the feature vector. 
 
-##Evaluation
+## Evaluation
 
 To verify the correctness of the training algorithm, I first set out to see if the CRF can basically overfit on its own data. This shows that at least it is able to learn. 
 
@@ -62,7 +62,7 @@ is basically just a HMM with a gazeteer and some other minimal features. Precisi
 
 The next logical step would be to implement more feature functions and do a series of cross validations etc. I didn't do this...
 
-##Implementation Details
+## Implementation Details
 
 The goal of this project was to implement a CRF model specifically but not limited to NER from more or less scratch. 
 At first the idea was to use a numeric library such as numpy to do most of the intensive calculations. Earlier verions using
@@ -73,13 +73,13 @@ require any large dependencies or other external sources. Secondly, it is a well
 scalar product operations on several sparse arrays using different data structures. At below 5% density on an array with around 1 million elements , dictionaries outperformed numpy significantly. 
 Scipy sparse matrices seemed to suffer initialized inside a for loop.
 
-##Optimizaitons
+## Optimizaitons
 - only consider known transitions in Viterbi
 - precalculate feature vectors for gold data in the first iteration
 - Viterbi has an option to output a list of feature vectors. This avoids unnecessary recalculation during perceptron training
 - Only pickout feature vectors from words that don't match during perceptron training. 
 
-##ToDo & problems
+## ToDo & problems
 - pre calculate parts of word features.
 - find and 
 - by opting to use dictionaries instead of Numpy, I miss out on fast back end computations. 
