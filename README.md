@@ -23,13 +23,13 @@ python crf_demo.py
 ### example usage:
 
 1.
-python main.py -i data/train -t data/test -o results.txt -k 10 --eval --save
+*python main.py -i data/train -t data/test -o results.txt -k 10 --eval --save*
 
 train on training data 10 times. test on test data. write results to results.txt. print report. save to binary
 
 2.
 
-python main.py  -t data/minimini -o results.txt --eval --load-index saved_bin.index --load-weights saved_bin.weights
+*python main.py  -t data/minimini -o results.txt --eval --load-index saved_bin.index --load-weights saved_bin.weights*
 
 loads from weights, tests on test data, write results to results.txt, print classification report
 
