@@ -4,7 +4,10 @@ Python module for Linear Conditional Random Fields applied to Named Entity Recog
 Santichai Pornavalai
 31.3.19
 
-## DEMO MANUAL:
+## Setup:
+run 
+*pip install -r requirements.txt*
+## Usage:
 
 
 python crf_demo.py 
@@ -73,7 +76,7 @@ require any large dependencies or other external sources. Secondly, it is a well
 scalar product operations on several sparse arrays using different data structures. At below 5% density on an array with around 1 million elements , dictionaries outperformed numpy significantly. 
 Scipy sparse matrices seemed to suffer initialized inside a for loop.
 
-## Optimizaitons
+## Optimizations
 - only consider known transitions in Viterbi
 - precalculate feature vectors for gold data in the first iteration
 - Viterbi has an option to output a list of feature vectors. This avoids unnecessary recalculation during perceptron training
