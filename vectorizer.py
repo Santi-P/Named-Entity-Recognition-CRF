@@ -312,7 +312,7 @@ class Vectorizer:
     def add_weights(self, weights, featv, lr=1):
         """ add sparse vector to weight """
         for k, val in featv.items():
-            weights[k] += val
+            weights[k] += lr*val
 
 
 def main():

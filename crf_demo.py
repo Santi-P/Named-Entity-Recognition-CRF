@@ -61,9 +61,10 @@ def main(argv):
             print("No weight or index file provided")
             sys.exit(3)
     else:
-        crf_model.fit(inputpath, iterations=10)
+        crf_model.fit(inputpath, iterations=int(iterations))
 
     if len(testpath) > 0:
+        print("testing on:", testpath)
         predicted, real = crf_model.predict(testpath)
 
         if evaluate:

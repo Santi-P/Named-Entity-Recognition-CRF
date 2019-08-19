@@ -68,8 +68,8 @@ class CRF:
 
         self.vectorizer.add_feature("word tag", self.vectorizer.sparse_feat_word_and_tag, len(self.vectorizer.word_map)*len(self.vectorizer.tag_map), True)
         self.vectorizer.add_feature("DE name gazetter", self.vectorizer.sparse_feat_in_names, 2)
-       # self.vectorizer.add_feature("Caps", self.vectorizer.sparse_feat_is_all_cap, 2)
-        #self.vectorizer.add_feature("hyphenated", self.vectorizer.sparse_feat_hyphenated, 2)
+        self.vectorizer.add_feature("Caps", self.vectorizer.sparse_feat_is_all_cap, 2)
+        self.vectorizer.add_feature("hyphenated", self.vectorizer.sparse_feat_hyphenated, 2)
         
         # tag transitions must be added last so that the Viterbi can know where to look
         self.vectorizer.add_feature("prev tag", self.vectorizer.sparse_feat_prev_tag, len(self.vectorizer.tag_map)*len(self.vectorizer.tag_map), True)
@@ -93,7 +93,7 @@ class CRF:
         predicted_list = []
 
         actual_list = []
-        for token_seq,tag_seq in zip(tokens,tags):
+        for token_seq,tag_seq in tqdm(list(zip(tokens,tags))):
             predicted_tags = self.inference(token_seq)
             predicted_list.extend(predicted_tags)
             actual_list.extend(tag_seq)
@@ -164,13 +164,18 @@ class CRF:
 
                 # argmax
                 # go through states with known transition
+                tag_curr_id = self.tag_dict[tag_1] * self.vectorizer.tag_sentinel + self.vectorizer.partitions[-1]
+
                 for tag_2 in self.vectorizer.tag2tag[tag_1]:
-                    vs = viterbi_chart[i-1][self.tag_dict[tag_2]] + \
-                    self.vectorizer.get_trans_idx(token_seq,tag_1, tag_2,i,self.weights)
+                    ind_tag_2 = self.tag_dict[tag_2]
+                    ind = tag_curr_id + ind_tag_2
+
+                    vs = viterbi_chart[i-1][ind_tag_2] + self.weights[ind]
+                    
 
                     if vs > best_val:
                         best_val = vs
-                        idx = self.tag_dict[tag_2]
+                        idx = ind_tag_2
 
                 # update charts`
                 bp_chart[i][j] = idx
@@ -243,7 +248,7 @@ class CRF:
             # epoch timer
             #start = time()
 
-            #shuffle(train_data)
+            shuffle(train_data)
             print("starting epoch:", i + 1)
             wrong = 0
             for idx, (tokens, tags) in tqdm(train_data):
