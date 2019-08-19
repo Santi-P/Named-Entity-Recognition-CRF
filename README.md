@@ -23,13 +23,13 @@ python crf_demo.py
 ### example usage:
 
 1.
-*python main.py -i data/train -t data/test -o results.txt -k 10 --eval --save*
+*python crf_demo.py -i data/train -t data/test -o results.txt -k 10 --eval --save*
 
 train on training data 10 times. test on test data. write results to results.txt. print report. save to binary
 
 2.
 
-*python main.py  -t data/minimini -o results.txt --eval --load-index saved_bin.index --load-weights saved_bin.weights*
+*python crf_demo.py  -t data/minimini -o results.txt --eval --load-index saved_bin.index --load-weights saved_bin.weights*
 
 loads from weights, tests on test data, write results to results.txt, print classification report
 
@@ -78,9 +78,4 @@ Scipy sparse matrices seemed to suffer initialized inside a for loop.
 - precalculate feature vectors for gold data in the first iteration
 - Viterbi has an option to output a list of feature vectors. This avoids unnecessary recalculation during perceptron training
 - Only pickout feature vectors from words that don't match during perceptron training. 
-
-## ToDo & problems
-- pre calculate parts of word features.
-- find and 
-- by opting to use dictionaries instead of Numpy, I miss out on fast back end computations. 
 

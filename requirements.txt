@@ -1,0 +1,4 @@
+numba==0.43.1
+numpy==1.16.3
+tqdm==4.31.0
+scikit_learn==0.21.3

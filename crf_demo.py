@@ -6,6 +6,7 @@
 # tested on python 3.7.2
 
 import sys, getopt
+#from crf import CRF
 from crf import CRF
 from vectorizer import Vectorizer
 
